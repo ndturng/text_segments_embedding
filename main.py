@@ -29,4 +29,6 @@ model = SentenceTransformer(
 
 # Embed the text chunks
 embeddings = model.encode(text_chunks)
+embeddings_list = embeddings.tolist()
+
 print("Done")
